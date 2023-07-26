@@ -18,7 +18,7 @@ def start():
 
         for invite in invites:
             url = URL + invite
-            logger.info(f"Token: {token}, link: {url}")
+            logger.info(f"Token: {token}, link: https://discord.gg/{invite}")
 
             result = send_request(url=url, token=token)
             joins += 1 if result else 0
